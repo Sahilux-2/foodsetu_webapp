@@ -1,0 +1,167 @@
+/* Global Resets and Variables are in index.css */
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* Soft, premium gradient background for the web app */
+  background: linear-gradient(135deg, #fdfbfb 0%, #ebedee 100%);
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 24px 48px;
+  background-color: transparent;
+  width: 100%;
+}
+
+.navbar-brand {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+}
+
+.brand-logo-placeholder {
+  width: 32px;
+  height: 32px;
+  background-color: var(--primary-orange);
+  border-radius: 8px;
+  display: inline-block;
+}
+
+.brand-text {
+  font-size: 24px;
+  font-weight: var(--font-weight-semibold);
+  letter-spacing: 2px;
+  color: var(--text-dark);
+}
+
+/* Main Content Area */
+.main-content {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* Auth Card */
+.auth-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  padding: 56px 48px;
+  width: 100%;
+  max-width: 480px;
+  box-shadow: 0 10px 40px rgba(0, 0, 0, 0.04), 0 1px 3px rgba(0,0,0,0.02);
+  border: 1px solid rgba(224, 224, 224, 0.6);
+  text-align: center;
+}
+
+.auth-title {
+  font-size: 28px;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 40px;
+  color: var(--text-dark);
+}
+
+.text-orange {
+  color: var(--primary-orange);
+}
+
+/* Buttons */
+.btn {
+  width: 100%;
+  padding: 16px;
+  border-radius: 12px;
+  font-family: var(--font-family);
+  font-size: var(--font-size-base);
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-secondary {
+  background-color: var(--white);
+  color: var(--text-dark);
+  border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+  background-color: #fafafa;
+  border-color: #bbbbbb;
+}
+
+.btn-primary {
+  background-color: var(--primary-orange);
+  color: var(--white);
+  border: 1px solid var(--primary-orange);
+  box-shadow: 0 4px 14px rgba(229, 76, 31, 0.2);
+}
+
+.btn-primary:hover {
+  background-color: #d1441b;
+  box-shadow: 0 6px 20px rgba(229, 76, 31, 0.3);
+  transform: translateY(-1px);
+}
+
+/* Divider */
+.divider {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 32px 0;
+  color: #888;
+  font-size: 14px;
+}
+
+.divider::before,
+.divider::after {
+  content: '';
+  flex: 1;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.divider span {
+  padding: 0 16px;
+}
+
+/* Card Footer */
+.card-footer {
+  margin-top: 40px;
+}
+
+.footer-text {
+  font-size: 15px;
+  color: #555;
+}
+
+.login-link {
+  color: var(--primary-orange);
+  font-weight: var(--font-weight-semibold);
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.login-link:hover {
+  text-decoration: underline;
+}
+
+/* Responsive constraints */
+@media (max-width: 600px) {
+  .navbar {
+    padding: 16px 24px;
+    justify-content: center;
+  }
+  
+  .auth-card {
+    padding: 40px 24px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+  }
+}
