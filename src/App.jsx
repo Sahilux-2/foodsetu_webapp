@@ -1,45 +1,23 @@
 import React from 'react';
+import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import Welcome from './pages/Welcome';
+import VolunteerSignup from './pages/VolunteerSignup';
+import NgoSignup from './pages/NgoSignup';
+import Terms from './pages/Terms';
+import Home from './pages/Home';
 import './App.css';
 
 function App() {
   return (
-    <div className="app-container">
-      {/* Top Navigation Bar */}
-      <nav className="navbar">
-        <div className="navbar-brand">
-          <div className="brand-logo-placeholder"></div>
-          <h1 className="brand-text">FOOD SETU</h1>
-        </div>
-      </nav>
-
-      {/* Main Content Area */}
-      <main className="main-content">
-        <div className="auth-card">
-          <h2 className="auth-title">
-            Log in <span className="text-orange">or</span> Sign up
-          </h2>
-          
-          <button className="btn btn-secondary">
-            Signup as Volunteer
-          </button>
-          
-          <div className="divider">
-            <span>or</span>
-          </div>
-          
-          <button className="btn btn-primary">
-            Signup as NGO
-          </button>
-
-          {/* Footer inside card for better desktop grouping */}
-          <div className="card-footer">
-            <p className="footer-text">
-              Already have an account? <a href="#" className="login-link">Login</a>
-            </p>
-          </div>
-        </div>
-      </main>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        <Route path="/" element={<Welcome />} />
+        <Route path="/signup/volunteer" element={<VolunteerSignup />} />
+        <Route path="/signup/ngo" element={<NgoSignup />} />
+        <Route path="/terms" element={<Terms />} />
+        <Route path="/home" element={<Home />} />
+      </Routes>
+    </BrowserRouter>
   );
 }
 
