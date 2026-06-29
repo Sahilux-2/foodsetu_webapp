@@ -676,3 +676,528 @@
     padding-right: 24px;
   }
 }
+
+/* =========================================
+   Search Dropdown Styling
+   ========================================= */
+
+.search-container {
+  margin-bottom: 24px;
+  position: relative;
+}
+
+.search-dropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  background-color: var(--white);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  margin-top: 8px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.1);
+  z-index: 100;
+  overflow: hidden;
+}
+
+.dropdown-title {
+  font-size: 12px;
+  color: #777;
+  font-weight: var(--font-weight-semibold);
+  padding: 16px 20px 8px;
+  letter-spacing: 1px;
+}
+
+.recent-list {
+  display: flex;
+  flex-direction: column;
+}
+
+.recent-item {
+  display: flex;
+  align-items: center;
+  padding: 12px 20px;
+  border-bottom: 1px solid var(--border-color);
+  transition: background-color 0.2s;
+  cursor: pointer;
+}
+
+.recent-item:last-child {
+  border-bottom: none;
+}
+
+.recent-item:hover {
+  background-color: #f9f9f9;
+}
+
+.recent-logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  background-color: #f0f0f0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary-orange);
+  margin-right: 16px;
+  font-size: 18px;
+}
+
+.recent-info {
+  flex-grow: 1;
+}
+
+.recent-name {
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  margin-bottom: 4px;
+}
+
+.recent-loc {
+  font-size: 12px;
+  color: #888;
+}
+
+.recent-close {
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 50%;
+  transition: background-color 0.2s;
+}
+
+.recent-close:hover {
+  background-color: #eaeaea;
+}
+
+.clickable-card {
+  cursor: pointer;
+}
+
+/* =========================================
+   College Details Screen Styling (Swiggy Desktop Ref)
+   ========================================= */
+
+.college-details-page {
+  background-color: #f8f9fa; /* slightly off-white for the background */
+  min-height: 100vh;
+}
+
+.details-header {
+  display: flex;
+  align-items: center;
+  padding: 24px 48px;
+  background-color: var(--white);
+  box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+}
+
+.header-title {
+  margin: 0;
+  margin-left: 16px;
+  font-size: 20px;
+}
+
+.details-main-content {
+  padding: 40px 48px;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.details-card-container {
+  display: flex;
+  background-color: var(--white);
+  border-radius: 24px;
+  overflow: hidden;
+  box-shadow: 0 4px 30px rgba(0,0,0,0.05);
+  border: 1px solid var(--border-color);
+}
+
+.details-image-section {
+  flex: 0 0 50%; /* 50% width on desktop */
+}
+
+.details-hero-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  min-height: 400px;
+}
+
+.details-info-section {
+  flex: 0 0 50%;
+  padding: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.details-header-row {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  margin-bottom: 8px;
+}
+
+.details-college-name {
+  font-size: 28px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  line-height: 1.2;
+}
+
+.diet-icon.large {
+  width: 20px;
+  height: 20px;
+  border-width: 2px;
+}
+
+.diet-icon.large::after {
+  width: 10px;
+  height: 10px;
+}
+
+.details-meta {
+  font-size: 14px;
+  color: #555;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 12px;
+}
+
+.details-rating {
+  display: inline-flex;
+  align-items: center;
+  background-color: #ffffff;
+  color: #27ae60;
+  padding: 0;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  margin-bottom: 24px;
+}
+
+.details-rating span:last-child {
+  font-weight: var(--font-weight-regular);
+  color: #555;
+  margin-left: 12px;
+  background: none;
+}
+
+.rating-star {
+  margin-right: 4px;
+}
+
+.details-divider {
+  border-top: 1px solid var(--border-color);
+  margin: 24px 0;
+}
+
+.details-subheading {
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.meal-card {
+  background-color: #f9f9f9;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 16px;
+  margin-bottom: 32px;
+}
+
+.meal-header-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.meal-title {
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.meal-qty-badge {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.qty-label {
+  font-size: 10px;
+  color: #888;
+  text-transform: uppercase;
+}
+
+.qty-value {
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary-orange);
+}
+
+.meal-items {
+  font-size: 14px;
+  color: #555;
+}
+
+.details-action-area {
+  margin-top: auto;
+}
+
+.details-cta {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+}
+
+/* Responsive details screen */
+@media (max-width: 900px) {
+  .details-card-container {
+    flex-direction: column;
+  }
+  .details-image-section,
+  .details-info-section {
+    flex: 0 0 100%;
+  }
+  .details-hero-image {
+    height: 300px;
+    min-height: auto;
+  }
+}
+
+/* =========================================
+   Checkout Screen Styling
+   ========================================= */
+
+.checkout-page {
+  background-color: #f8f9fa;
+  min-height: 100vh;
+}
+
+.checkout-main {
+  display: flex;
+  justify-content: center;
+  padding: 40px 24px;
+}
+
+.checkout-card {
+  background-color: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.06);
+  padding: 40px;
+  width: 100%;
+  max-width: 600px;
+  border: 1px solid var(--border-color);
+}
+
+.checkout-title {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  text-align: center;
+  margin-bottom: 32px;
+}
+
+.checkout-segment-control {
+  display: flex;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  padding: 4px;
+  margin-bottom: 32px;
+}
+
+.segment-btn {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  background: transparent;
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  color: #777;
+  cursor: pointer;
+  border-radius: 6px;
+  transition: all 0.2s;
+}
+
+.segment-btn.active {
+  background-color: var(--white);
+  color: var(--primary-orange);
+  box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+}
+
+.order-summary {
+  background-color: #fcfcfc;
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  padding: 24px;
+  margin-bottom: 24px;
+}
+
+.summary-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 16px;
+  padding-bottom: 16px;
+  border-bottom: 1px dashed var(--border-color);
+}
+
+.summary-college {
+  font-size: 18px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+}
+
+.summary-details {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.summary-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.summary-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.summary-value {
+  font-size: 14px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--text-dark);
+}
+
+.summary-value.highlight {
+  color: var(--primary-orange);
+  font-size: 16px;
+}
+
+.delivery-info {
+  margin-bottom: 32px;
+}
+
+.info-box {
+  background-color: var(--white);
+  border: 1px solid var(--primary-orange);
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.info-box h4 {
+  font-size: 16px;
+  font-weight: var(--font-weight-semibold);
+  color: var(--primary-orange);
+  margin-bottom: 12px;
+}
+
+.info-text {
+  font-size: 14px;
+  color: #555;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.checkout-btn {
+  width: 100%;
+  padding: 16px;
+  font-size: 16px;
+}
+
+/* =========================================
+   Success Screen Styling
+   ========================================= */
+
+.success-page {
+  background-color: var(--white);
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.success-content {
+  text-align: center;
+  max-width: 400px;
+  padding: 24px;
+}
+
+.success-icon-wrapper {
+  width: 100px;
+  height: 100px;
+  margin: 0 auto 32px;
+}
+
+.success-tick {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  display: block;
+  stroke-width: 2;
+  stroke: #27ae60;
+  stroke-miterlimit: 10;
+  box-shadow: inset 0px 0px 0px #27ae60;
+  animation: fill .4s ease-in-out .4s forwards, scale .3s ease-in-out .9s both;
+}
+
+.success-circle {
+  stroke-dasharray: 166;
+  stroke-dashoffset: 166;
+  stroke-width: 2;
+  stroke-miterlimit: 10;
+  stroke: #27ae60;
+  fill: none;
+  animation: stroke 0.6s cubic-bezier(0.65, 0, 0.45, 1) forwards;
+}
+
+.success-check {
+  transform-origin: 50% 50%;
+  stroke-dasharray: 48;
+  stroke-dashoffset: 48;
+  animation: stroke 0.3s cubic-bezier(0.65, 0, 0.45, 1) 0.8s forwards;
+}
+
+@keyframes stroke {
+  100% { stroke-dashoffset: 0; }
+}
+
+@keyframes scale {
+  0%, 100% { transform: none; }
+  50% { transform: scale3d(1.1, 1.1, 1); }
+}
+
+@keyframes fill {
+  100% { box-shadow: inset 0px 0px 0px 30px rgba(39, 174, 96, 0.1); }
+}
+
+.success-title {
+  font-size: 24px;
+  font-weight: var(--font-weight-bold);
+  color: var(--text-dark);
+  margin-bottom: 16px;
+}
+
+.success-message {
+  font-size: 15px;
+  color: #666;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.back-home-btn {
+  padding: 12px 32px;
+  font-size: 14px;
+}
+
