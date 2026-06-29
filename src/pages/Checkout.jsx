@@ -19,12 +19,15 @@ function Checkout() {
   return (
     <div className="app-container checkout-page">
       <div className="details-header">
-        <button className="back-button-nav" aria-label="Go back" onClick={() => navigate(-1)}>
-          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
-            <path d="M15 18l-6-6 6-6" />
-          </svg>
-        </button>
-        <h1 className="brand-text header-title">FOOD SETU</h1>
+        <div className="navbar-brand" onClick={() => navigate(-1)}>
+          <button className="back-button-nav" aria-label="Go back">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M15 18l-6-6 6-6" />
+            </svg>
+          </button>
+          <img src="/Food_setu_logov2.svg" alt="Food Setu Logo" className="brand-logo" />
+          <h1 className="brand-text header-title">FOOD SETU</h1>
+        </div>
       </div>
 
       <main className="checkout-main">

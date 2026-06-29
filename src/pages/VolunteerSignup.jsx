@@ -57,7 +57,7 @@ function VolunteerSignup() {
               <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
-          <div className="brand-logo-placeholder"></div>
+          <img src="/Food_setu_logov2.svg" alt="Food Setu Logo" className="brand-logo" />
           <h1 className="brand-text">FOOD SETU</h1>
         </div>
       </nav>

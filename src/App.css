@@ -25,12 +25,10 @@
   cursor: pointer;
 }
 
-.brand-logo-placeholder {
-  width: 32px;
-  height: 32px;
-  background-color: var(--primary-orange);
-  border-radius: 8px;
-  display: inline-block;
+.brand-logo {
+  height: 36px;
+  width: auto;
+  object-fit: contain;
 }
 
 .brand-text {
